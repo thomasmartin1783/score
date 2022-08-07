@@ -90,7 +90,7 @@ output = []
 # //! ==============================================================================
 
 
-with open('data_google.json', encoding='utf-8') as f:
+with open('data_bn_translit.json', encoding='utf-8') as f:
     data = json.load(f)
 
 # with open(filename, encoding='cp1252') as f:
