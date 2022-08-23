@@ -2,13 +2,14 @@ import pandas as pd
 
 
 # //* writing first time
-# with pd.ExcelWriter('output.xlsx', mode='w') as writer:
+# with pd.ExcelWriter('rouge_scores_2.xlsx', mode='w') as writer:
 #     pd.read_json("input.json").to_excel(writer,
-#                                         sheet_name="Sheet1",)
+#                                         sheet_name="Sheet1",
+#                                         startrow=1)
 
 
 # //* appending
-with pd.ExcelWriter('rouge_scores.xlsx', mode='a', if_sheet_exists="overlay") as writer:
+with pd.ExcelWriter('rouge_scores_2.xlsx', mode='a', if_sheet_exists="overlay") as writer:
     pd.read_json("input.json").to_excel(writer,
                                         index=False,
                                         sheet_name="Sheet1",
